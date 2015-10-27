@@ -75,7 +75,7 @@ int mat_left(int **mat){
     int flag=0;
     int k=0,temp[4]={0},last=0;
     for(i=0;i<4;i++){
-        memset(temp,0,sizeof(int)*4);
+        memset(temp,'\0',sizeof(int)*4);
         for(j=0,k=0,last=0;j<4;j++){
             if(mat[i][j]!=0){
                 temp[k]=mat[i][j];
